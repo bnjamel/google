@@ -10,7 +10,7 @@ export class RedisCacheController {
   @Post('set')
   async setCache(@Body() body: { key: string; value: string; ttl?: number }) {
     await this.cacheService.set(body.key, body.value, body.ttl);
-    return { message: 'Cache set successfully' };
+    return { message: 'Done successfully' };
   }
 
   @Get('get/:key')
