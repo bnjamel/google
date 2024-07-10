@@ -9,6 +9,7 @@ import { RedisModule } from '@nestjs-modules/ioredis';
       url: 'redis://10.26.141.251:6379',
       type: 'single',
       options: {
+        name: "redis-connection",
         connectTimeout: 10000,
         showFriendlyErrorStack: true,
         password: 'Taeen123$#'
